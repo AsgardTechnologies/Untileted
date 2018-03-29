@@ -1,4 +1,4 @@
-package se.asgardtechnologies.submarine.objects;
+package pm.asgard.submarine.objects;
 
 import java.security.InvalidParameterException;
 

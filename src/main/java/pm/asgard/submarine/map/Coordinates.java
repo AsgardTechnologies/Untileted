@@ -1,4 +1,4 @@
-package se.asgardtechnologies.submarine.map;
+package pm.asgard.submarine.map;
 
 /**
  * Created by Thor on 2018-01-10.

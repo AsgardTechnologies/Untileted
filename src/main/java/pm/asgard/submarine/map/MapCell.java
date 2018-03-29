@@ -1,11 +1,11 @@
-package se.asgardtechnologies.submarine.map;
+package pm.asgard.submarine.map;
 
 /**
  * Created by Thor on 2018-01-09.
  */
 
-import se.asgardtechnologies.submarine.objects.AbstractMapObject;
-import se.asgardtechnologies.submarine.objects.ClearTerrain;
+import pm.asgard.submarine.objects.AbstractMapObject;
+import pm.asgard.submarine.objects.ClearTerrain;
 
 /**
  * A cell in the map represents one square with a value
