@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-
+/target/
 
 # Package Files #
 *.jar
@@ -12,3 +12,4 @@
 
 /.idea/
 *.iml
+

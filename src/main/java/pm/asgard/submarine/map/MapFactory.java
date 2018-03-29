@@ -2,7 +2,6 @@ package pm.asgard.submarine.map;
 
 import pm.asgard.submarine.objects.Goal;
 import pm.asgard.submarine.objects.Player;
-import se.asgardtechnologies.submarine.objects.*;
 
 import java.util.ArrayList;
 import java.util.Random;
