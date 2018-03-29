@@ -1,6 +1,6 @@
-package pm.asgard.submarine.map;
+package com.asgardtechnologies.submarine.map;
 
-import pm.asgard.submarine.objects.AbstractMapObject;
+import com.asgardtechnologies.submarine.objects.AbstractMapObject;
 
 import java.util.ArrayList;
 

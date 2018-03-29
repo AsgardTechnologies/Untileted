@@ -1,7 +1,7 @@
-package pm.asgard.submarine;
+package com.asgardtechnologies.submarine;
 
-import pm.asgard.submarine.map.MapFactory;
-import pm.asgard.submarine.map.Map;
+import com.asgardtechnologies.submarine.map.MapFactory;
+import com.asgardtechnologies.submarine.map.Map;
 
 public class Main {
 

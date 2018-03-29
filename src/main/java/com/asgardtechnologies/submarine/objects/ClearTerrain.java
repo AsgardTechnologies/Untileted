@@ -1,4 +1,4 @@
-package pm.asgard.submarine.objects;
+package com.asgardtechnologies.submarine.objects;
 
 /**
  * Created by Thor on 2018-01-09.
