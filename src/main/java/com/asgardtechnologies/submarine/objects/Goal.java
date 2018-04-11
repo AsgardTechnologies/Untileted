@@ -6,6 +6,6 @@ package com.asgardtechnologies.submarine.objects;
 public class Goal extends AbstractMapObject{
 
     public Goal() {
-        this.value = 'O';
+        this.charModel = 'O';
     }
 }

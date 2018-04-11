@@ -6,8 +6,7 @@ package com.asgardtechnologies.submarine.objects;
 public class ClearTerrain extends AbstractMapObject {
 
     public ClearTerrain(){
-        this.value = '~';
-
+        this.charModel = '~';
     }
 
 

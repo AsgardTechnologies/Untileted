@@ -13,6 +13,7 @@ public class MapFactory {
 
     int size = 3;
     ArrayList<Integer[]> objectCords = new ArrayList<>();
+
     public MapFactory() {
     }
 
@@ -20,34 +21,29 @@ public class MapFactory {
         this.size = size;
     }
 
-    private Map generateEmptyMap(){
-        Map map = new Map (new MapCell[size][size]);
+    private Map generateEmptyMap() {
+        Map map = new Map(new MapCell[size][size]);
         return map;
     }
 
 
-    private Map placePlayer(Map map){
-
+    private void placePlayer(Map map) {
         Random rand = new Random();
-        Coordinates playerCords = new Coordinates(rand.nextInt(size),rand.nextInt(size));
+        Coordinates playerCords = new Coordinates(rand.nextInt(size), rand.nextInt(size));
         Player player = new Player("one");
         map.placeObject(player, playerCords);
-        return map;
+        //return map;
     }
 
-    private Map placeGoal(Map map){
-
+    private void placeGoal(Map map) {
         Random rand = new Random();
-
-        Coordinates goalCords = new Coordinates(rand.nextInt(size),rand.nextInt(size));
-
+        Coordinates goalCords = new Coordinates(rand.nextInt(size), rand.nextInt(size));
         map.placeObject(new Goal(), goalCords);
-        return map;
+        //return map;
     }
 
 
-
-    public Map getMap(){
+    public Map getMap() {
         Map map = generateEmptyMap();
         placePlayer(map);
         placeGoal(map);

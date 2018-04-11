@@ -11,18 +11,19 @@ import com.asgardtechnologies.submarine.objects.ClearTerrain;
  * A cell in the map represents one square with a value
  */
 public class MapCell {
-    AbstractMapObject cellType;
 
-    public MapCell(){
+    private AbstractMapObject cellType;
+
+    public MapCell() {
         cellType = new ClearTerrain();
     }
 
-    public void setCellType(AbstractMapObject cellType){
+    public void setCellType(AbstractMapObject cellType) {
         this.cellType = cellType;
     }
 
 
-    public String toString(){
-        return Character.toString(cellType.toChar());
+    public String toString() {
+        return Character.toString(cellType.toCharModel());
     }
 }

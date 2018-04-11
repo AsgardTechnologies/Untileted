@@ -8,7 +8,7 @@ import java.security.InvalidParameterException;
 public abstract class AbstractMapObject {
 
     //The visible character that represents this object
-    protected char value;
+    protected char charModel;
 
     private int occupiedSpace = 3;
 
@@ -32,8 +32,8 @@ public abstract class AbstractMapObject {
         return occupiedSpace;
     }
 
-    public char toChar(){
-        return value;
+    public char toCharModel(){
+        return charModel;
     }
 
 

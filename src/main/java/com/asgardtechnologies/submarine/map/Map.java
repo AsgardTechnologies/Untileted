@@ -18,13 +18,14 @@ public class Map {
         size = map.length;
 
         System.out.print("Generating terrain.\n");
-        initMap();
+        initEmptyMap();
     }
 
-    private void initMap(){
-        for (int row = 0; row< map.length; row++) {
+    private void initEmptyMap() {
+        for (int row = 0; row < map.length; row++) {
 
-            for (int col = 0; col<map[row].length; col++) {
+            for (int col = 0; col < map[row].length; col++) {
+                // assign a ClearTerrain MapObject to each cell in the Map
                 map[row][col] = new MapCell();
             }
         }
@@ -38,7 +39,7 @@ public class Map {
      * @return 1 on success, 0 on fail
      */
     public int placeObject(AbstractMapObject object, Coordinates cords){
-        if (!checkOccupancy(cords)) {
+        if (!isSpaceOccupied(cords)) {
             map[cords.x][cords.y].setCellType(object);
             occupiedSpaces.addAll(calculateOccupiedSpaces(object, cords));
             return 1;
@@ -52,7 +53,7 @@ public class Map {
      * @param cords
      * @return
      */
-    private boolean checkOccupancy(Coordinates cords){
+    private boolean isSpaceOccupied(Coordinates cords){
         for(Coordinates occupiedCoordinates: occupiedSpaces){
             if(occupiedCoordinates.equals(cords)) return true;
         }
